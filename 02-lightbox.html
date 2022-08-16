@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SimpleLightbox library</title>
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <p><a href="index.html">Go back</a></p>
 
-    <!-- Add gallery items to this list -->
-    <ul class="gallery"></ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>SimpleLightbox library</title>
+  <link rel="stylesheet" href="/dist/simple-lightbox.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-    <script src="js/02-lightbox.js" type="module"></script>
-  </body>
+<body>
+  <p><a href="index.html">Go back</a></p>
+
+  <!-- Add gallery items to this list -->
+  <div class="gallery">
+
+    <!-- <a class="gallery__item"
+      href='https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825_1280.jpg'>
+      <img class="gallery__image"
+        src=' https://cdn.pixabay.com/photo/2019/05/14/16/43/himilayan-blue-poppy-4202825__340.jpg'
+        alt="${description}" />
+    </a> -->
+
+    <!-- <a class="gallery__item" href='https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg''>
+      <img class="gallery__image"
+        src=' https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg' alt="${description}" />
+    </a> -->
+
+  </div>
+
+  <script src="/dist/simple-lightbox.min.js"></script>
+  <script src="js/02-lightbox.js" type="module"></script>
+
+</body>
+
 </html>

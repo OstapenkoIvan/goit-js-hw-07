@@ -40,9 +40,16 @@ function openLightBoxImage(event) {
 }
 
 function createLargeImage(data) {
-  return basicLightbox.create(`
+  return basicLightbox.create(
+    `
     <img src="${data}" width="800" height="600">
-`);
+`,
+    {
+      onClose: () => {
+        window.removeEventListener("keydown", closeWithEsc, { once: true });
+      },
+    }
+  );
 }
 
 function closeWithEsc(event) {

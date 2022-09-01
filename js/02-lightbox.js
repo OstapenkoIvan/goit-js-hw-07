@@ -16,7 +16,7 @@ function galleryMarkupGeneration(arr) {
     .join("");
 }
 
-var $gallery = new SimpleLightbox(".gallery a", {
+var gallery = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
-  captionDelay: "250ms",
+  captionDelay: "250",
 });
